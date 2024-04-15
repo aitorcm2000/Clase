@@ -1,0 +1,13 @@
+In order to have a connection from java to a mysql db ther must be several libraries imported into the java project
+these libraries being the following:
+	Connection
+	DriverManager
+	PrepareStatement
+	ResultSet
+	SQLException
+	Statement
+The connection must be stablished on the constructor of the DB class in Java through a try and catch, and ...
+the following steps:
+
+	Class.forName("com.mysql.jdbc.Driver"); //this sets up the connection calling to the jdbc.jar file 
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/namedb?useUnicode=true&useJDBCCompliantTimezoneShift=true&userLegacyDatetimeCode=true, "root", "");
